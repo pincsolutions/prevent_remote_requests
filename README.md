@@ -25,6 +25,17 @@ Add the middleware to your rack application in the usual way. Rails you could do
       # config/application.rb
       config.middleware.use PreventRemoteRequsts::Middleware
 
+## Configuration
+
+Your application should provide a config method call that provides the following:
+
+      # a hash of 'network' => 'mask' pairs
+      config.prevent_remote_requests.allowed = {'192.168.10.0' => 24}
+
+NOTE: unconfigured, prevent_remote_requests restricts access to 127.0.0.1
+
+
+
 
 ## Contributing
 
