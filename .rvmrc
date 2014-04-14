@@ -1,1 +1,1 @@
-rvm --create use 1.9.3-p484@prevent_remote_requests
+rvm --create use 2.1.1@prevent_remote_requests
